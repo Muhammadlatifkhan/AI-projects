@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Redesign AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .styles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .style-btn {
+            padding: 5px 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .style-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏠 AI Room Redesign Project</h1>
+    <div class="gallery">
+        {% for image in images %}
+        <div class="card">
+            <img src="/image/{{ image.filename }}" alt="{{ image.name }}">
+            <div class="card-content">
+                <h3>{{ image.name.replace('_', ' ').title() }}</h3>
+                <div class="styles">
+                    {% for style in image.styles %}
+                    <a href="/compare/{{ image.name }}/{{ style }}" class="style-btn">
+                        {{ style.title() }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

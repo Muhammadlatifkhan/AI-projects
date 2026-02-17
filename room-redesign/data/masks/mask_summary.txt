@@ -1,0 +1,12 @@
+Mask Generation Summary
+==================================================
+
+cozy_bedroom.jpg: 0 masks
+
+dining_room.jpg: 4 masks
+  - train
+  - boat
+  - fire hydrant
+  - bird
+
+spacious_office.jpg: 0 masks

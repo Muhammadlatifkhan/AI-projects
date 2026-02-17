@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Customer Support System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🤖 AI Customer Support System</h1>
+
+    <form method="POST">
+        <label for="message">Customer Message</label>
+        <textarea name="message" id="message" placeholder="Enter customer message here..." required></textarea>
+
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        <h2>AI Output</h2>
+        <pre>{{ result }}</pre>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

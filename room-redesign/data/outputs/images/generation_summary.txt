@@ -1,0 +1,26 @@
+IMAGE GENERATION SUMMARY
+============================================================
+
+cozy_bedroom.jpg:
+  - cozy_bedroom_modern.png
+  - cozy_bedroom_minimal.png
+  - cozy_bedroom_luxury.png
+  - cozy_bedroom_bohemian.png
+  - cozy_bedroom_industrial.png
+  - cozy_bedroom_scandinavian.png
+
+dining_room.jpg:
+  - dining_room_modern.png
+  - dining_room_minimal.png
+  - dining_room_luxury.png
+  - dining_room_bohemian.png
+  - dining_room_industrial.png
+  - dining_room_scandinavian.png
+
+spacious_office.jpg:
+  - spacious_office_modern.png
+  - spacious_office_minimal.png
+  - spacious_office_luxury.png
+  - spacious_office_bohemian.png
+  - spacious_office_industrial.png
+  - spacious_office_scandinavian.png

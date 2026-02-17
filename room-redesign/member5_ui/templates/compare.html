@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare - Room Redesign AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .comparison {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image-box {
+            flex: 1;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+        .image-box h2 {
+            text-align: center;
+            margin: 0 0 15px 0;
+            color: #333;
+            font-size: 24px;
+        }
+        .image-box p {
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+        }
+        .style-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-btn">← Back to Gallery</a>
+    
+    {% if original and redesigned %}
+        <h1>{{ image_name.replace('_', ' ').title() }} <span class="style-badge">{{ style.title() }} Style</span></h1>
+        
+        <div class="comparison">
+            <div class="image-box">
+                <h2>Original Room</h2>
+                <img src="/image/{{ original }}" alt="Original" onerror="this.onerror=null; this.src='https://via.placeholder.com/512x512?text=Image+Not+Found';">
+                <p>{{ original }}</p>
+            </div>
+            <div class="image-box">
+                <h2>AI Redesigned</h2>
+                <img src="/image/{{ redesigned }}" alt="Redesigned" onerror="this.onerror=null; this.src='https://via.placeholder.com/512x512?text=Image+Not+Found';">
+                <p>{{ redesigned }}</p>
+            </div>
+        </div>
+    {% else %}
+        <div class="error-message">
+            <h2>❌ Images not found</h2>
+            <p>Original: {{ original }}</p>
+            <p>Redesigned: {{ redesigned }}</p>
+            <p>Please check if the images exist in the data folder.</p>
+        </div>
+    {% endif %}
+</body>
+</html>

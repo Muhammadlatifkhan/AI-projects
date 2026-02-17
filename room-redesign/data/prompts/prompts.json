@@ -1,0 +1,116 @@
+{
+  "cozy_bedroom.jpg": {
+    "modern": {
+      "style": "Modern",
+      "positive": "Transform this bedroom into a Modern retreat with contemporary, steel, sleek, contemporary furniture, clean geometric shapes",
+      "negative": "dark, poorly lit, blurry",
+      "description": "Modern interior with clean lines, minimalist furniture, and contemporary design"
+    },
+    "minimal": {
+      "style": "Minimal",
+      "positive": "Redesign this bedroom with Minimal aesthetic featuring functional, uncluttered, simple, sparse decoration, functional pieces",
+      "negative": "dark, cluttered, blurry",
+      "description": "Minimalist space with simple forms, neutral palette, and uncluttered surfaces"
+    },
+    "luxury": {
+      "style": "Luxury",
+      "positive": "Transform this bedroom into a Luxury retreat with marble, sophisticated, rich textures, premium finishes, designer furniture",
+      "negative": "cluttered, blurry, low quality",
+      "description": "Luxurious interior with elegant furnishings, rich textures, and sophisticated details"
+    },
+    "bohemian": {
+      "style": "Bohemian",
+      "positive": "Redesign this bedroom with Bohemian aesthetic featuring eclectic, cozy, natural materials, layered textiles, indoor plants, global accents",
+      "negative": "messy, dark, blurry",
+      "description": "Bohemian style with eclectic patterns, plants, natural materials, and cozy atmosphere"
+    },
+    "industrial": {
+      "style": "Industrial",
+      "positive": "Transform this bedroom into a Industrial retreat with raw, concrete, brick, exposed brick, metal fixtures, urban vibe",
+      "negative": "poorly lit, messy, outdated",
+      "description": "Industrial design with raw materials, exposed elements, and urban aesthetic"
+    },
+    "scandinavian": {
+      "style": "Scandinavian",
+      "positive": "Transform this bedroom into a Scandinavian retreat with hygge, light wood, functional, light wood floors, cozy textiles, simple elegance",
+      "negative": "low quality, messy, dark",
+      "description": "Scandinavian interior with light woods, white walls, and cozy functional design"
+    }
+  },
+  "dining_room.jpg": {
+    "modern": {
+      "style": "Modern",
+      "positive": "Transform this dining space into a Modern area with sleek, minimalist, contemporary, contemporary furniture, clean geometric shapes",
+      "negative": "ugly, dark, outdated",
+      "description": "Modern interior with clean lines, minimalist furniture, and contemporary design"
+    },
+    "minimal": {
+      "style": "Minimal",
+      "positive": "Redesign this dining room with Minimal aesthetic featuring simple, airy, uncluttered, sparse decoration, functional pieces",
+      "negative": "ugly, outdated, low quality",
+      "description": "Minimalist space with simple forms, neutral palette, and uncluttered surfaces"
+    },
+    "luxury": {
+      "style": "Luxury",
+      "positive": "Transform this dining space into a Luxury area with rich textures, elegant, velvet, premium finishes, designer furniture",
+      "negative": "dark, ugly, outdated",
+      "description": "Luxurious interior with elegant furnishings, rich textures, and sophisticated details"
+    },
+    "bohemian": {
+      "style": "Bohemian",
+      "positive": "Transform this dining space into a Bohemian area with cozy, plants, colorful, layered textiles, indoor plants, global accents",
+      "negative": "low quality, messy, ugly",
+      "description": "Bohemian style with eclectic patterns, plants, natural materials, and cozy atmosphere"
+    },
+    "industrial": {
+      "style": "Industrial",
+      "positive": "Create an elegant Industrial dining room featuring concrete, raw, metal, exposed brick, metal fixtures, urban vibe",
+      "negative": "low quality, dark, poorly lit",
+      "description": "Industrial design with raw materials, exposed elements, and urban aesthetic"
+    },
+    "scandinavian": {
+      "style": "Scandinavian",
+      "positive": "Create an elegant Scandinavian dining room featuring simple, light wood, functional, light wood floors, cozy textiles, simple elegance",
+      "negative": "ugly, cluttered, dark",
+      "description": "Scandinavian interior with light woods, white walls, and cozy functional design"
+    }
+  },
+  "spacious_office.jpg": {
+    "modern": {
+      "style": "Modern",
+      "positive": "Convert this office to Modern workspace with contemporary, steel, minimalist, contemporary furniture, clean geometric shapes",
+      "negative": "ugly, poorly lit, outdated",
+      "description": "Modern interior with clean lines, minimalist furniture, and contemporary design"
+    },
+    "minimal": {
+      "style": "Minimal",
+      "positive": "Redesign this office using Minimal elements including neutral colors, simple, functional, sparse decoration, functional pieces",
+      "negative": "poorly lit, cluttered, low quality",
+      "description": "Minimalist space with simple forms, neutral palette, and uncluttered surfaces"
+    },
+    "luxury": {
+      "style": "Luxury",
+      "positive": "Redesign this office using Luxury elements including marble, high-end, elegant, premium finishes, designer furniture",
+      "negative": "low quality, outdated, poorly lit",
+      "description": "Luxurious interior with elegant furnishings, rich textures, and sophisticated details"
+    },
+    "bohemian": {
+      "style": "Bohemian",
+      "positive": "Redesign this office using Bohemian elements including natural materials, patterned, plants, layered textiles, indoor plants, global accents",
+      "negative": "poorly lit, dark, low quality",
+      "description": "Bohemian style with eclectic patterns, plants, natural materials, and cozy atmosphere"
+    },
+    "industrial": {
+      "style": "Industrial",
+      "positive": "Create a productive Industrial home office with raw, concrete, loft, exposed brick, metal fixtures, urban vibe",
+      "negative": "dark, low quality, cluttered",
+      "description": "Industrial design with raw materials, exposed elements, and urban aesthetic"
+    },
+    "scandinavian": {
+      "style": "Scandinavian",
+      "positive": "Convert this office to Scandinavian workspace with white, natural light, light wood, light wood floors, cozy textiles, simple elegance",
+      "negative": "cluttered, messy, outdated",
+      "description": "Scandinavian interior with light woods, white walls, and cozy functional design"
+    }
+  }
+}
