@@ -12,8 +12,12 @@ An AI-powered system that processes customer messages and provides:
 - **Tech Stack**: Python, Flask, Groq API, Transformers
 
 ### 2. 🔊 [Text-to-Speech (TTS) Voice Agent](./tts-agent/)
-*(Coming Soon)*
-Multilingual TTS system for English and Urdu speech synthesis.
+
+Multilingual TTS system that converts text from multiple sources:
+- **Input Types**: Plain text, PDF, Word documents, Images (OCR)
+- **Output Languages**: English and Urdu speech
+- **Tech Stack**: Python, Flask, gTTS, pyttsx3, Tesseract OCR, PyPDF2
+- **Multilingual TTS system for English and Urdu speech synthesis.
 
 ### 3. 🏠 [AI Room Redesign System](./room-redesign/)
 Complete 5-member AI pipeline for interior design:
