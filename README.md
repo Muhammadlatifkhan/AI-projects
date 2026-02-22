@@ -40,7 +40,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
 📊 Project Stats
-Total Projects: 2 (1 more planned)
+done
 
 Technologies: Python, Flask, PyTorch, Transformers, OpenCV, Groq API
 

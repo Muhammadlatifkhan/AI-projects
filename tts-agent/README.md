@@ -103,9 +103,3 @@ Muhammad Latif - Computer Systems Engineer
 
 📄 License
 MIT License
-
-## **STEP 3: Also update the main README to mention TTS**
-
-```powershell
-cd ..
-notepad README.md
