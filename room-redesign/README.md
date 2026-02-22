@@ -35,6 +35,28 @@ AI-projects/
 │ └── images/ # Redesigned room images (18 files)
 └── requirements.txt # Python dependencies
 
+## 🎨 REAL AI-Generated Samples
+
+Here are actual images generated using the Stable Diffusion + ControlNet pipeline:
+
+### Before/After Comparison
+![Modern Style Comparison](data/outputs/images/real_samples/comparison_modern.jpg)
+
+### All 6 Design Styles
+
+| Modern | Minimal | Luxury |
+|--------|---------|--------|
+| ![Modern](data/outputs/images/real_samples/room_modern.jpg) | ![Minimal](data/outputs/images/real_samples/room_minimal.jpg) | ![Luxury](data/outputs/images/real_samples/room_luxury.jpg) |
+
+| Bohemian | Industrial | Scandinavian |
+|----------|------------|--------------|
+| ![Bohemian](data/outputs/images/real_samples/room_bohemian.jpg) | ![Industrial](data/outputs/images/real_samples/room_industrial.jpg) | ![Scandinavian](data/outputs/images/real_samples/room_scandinavian.jpg) |
+
+### Original Image & Depth Map
+| Original Room | Depth Map |
+|---------------|-----------|
+| ![Original](data/outputs/images/real_samples/original_room.jpg) | ![Depth Map](data/outputs/images/real_samples/depth_map.png) |
+
 ## 🛠️ Technologies Used
 - **Python 3.11**
 - **PyTorch & torchvision** - Deep learning framework
@@ -73,15 +95,3 @@ Interactive web gallery for comparison
 Muhammad Latif - Computer Systems Engineer
 📄 License
 MIT License
-
-## **Steps to copy correctly:**
-
-1. **Click anywhere** in the code box above
-2. **Press Ctrl+A** (select all)
-3. **Press Ctrl+C** (copy)
-4. **Go to your README.md file**
-5. **Press Ctrl+A** (select all existing text)
-6. **Press Ctrl+V** (paste the new content)
-7. **Press Ctrl+S** (save)
-
-This will replace whatever is there with the complete file. ✅

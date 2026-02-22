@@ -20,12 +20,13 @@ Multilingual TTS system that converts text from multiple sources:
 - **Multilingual TTS system for English and Urdu speech synthesis.
 
 ### 3. 🏠 [AI Room Redesign System](./room-redesign/)
-Complete 5-member AI pipeline for interior design:
+Complete 5-member AI pipeline for interior design with **REAL generated samples**:
 - **Member 1**: Depth map generation (MiDaS)
 - **Member 2**: Object segmentation (DeepLabV3)
 - **Member 3**: Prompt engineering (6 styles)
 - **Member 4**: Image generation (Stable Diffusion + ControlNet)
 - **Member 5**: Web interface (Flask)
+- ✅ **See actual generated images** in the project README
 
 ## 🚀 Quick Start
 
