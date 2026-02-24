@@ -1,78 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Room Redesign AI</title>
+    <title>AI Room Redesign Project</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
             padding: 20px;
-            background: #f0f0f0;
+            background: #f5f5f5;
         }
-        h1 {
+        h1 { 
+            color: #2c3e50; 
             text-align: center;
-            color: #333;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
             padding: 20px;
-        }
-        .card {
             background: white;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
         }
-        .card-content {
-            padding: 15px;
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
         }
-        .card h3 {
-            margin: 0 0 10px 0;
-            color: #333;
+        .card { 
+            background: white;
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        .styles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
-        .style-btn {
-            padding: 5px 10px;
-            background: #007bff;
+        .card img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; 
+            border-bottom: 1px solid #eee;
+        }
+        .card-content { 
+            padding: 15px; 
+        }
+        .card-content h3 { 
+            margin: 0 0 10px 0; 
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .style-tag {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin: 2px;
+}
+
+.style-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 5px 12px;
+    margin: 2px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85em;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.style-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+        
+        .real-samples {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .badge {
+            background: #27ae60;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 12px;
-        }
-        .style-btn:hover {
-            background: #0056b3;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <h1>🏠 AI Room Redesign Project</h1>
-    <div class="gallery">
-        {% for image in images %}
-        <div class="card">
-            <img src="/image/{{ image.filename }}" alt="{{ image.name }}">
-            <div class="card-content">
-                <h3>{{ image.name.replace('_', ' ').title() }}</h3>
-                <div class="styles">
-                    {% for style in image.styles %}
-                    <a href="/compare/{{ image.name }}/{{ style }}" class="style-btn">
-                        {{ style.title() }}
-                    </a>
-                    {% endfor %}
+    
+    <!-- REAL AI-GENERATED SAMPLES SECTION -->
+    <div class="real-samples">
+        <div class="badge">✨ AI-Generated Designs (Real Samples)</div>
+        <h2>🎨 6 Design Styles - Generated from Same Room</h2>
+        <div class="gallery">
+            <!-- Modern -->
+            <div class="card">
+                <img src="/image/real_samples/room_modern.jpg" alt="Modern Style" onerror="this.src='https://via.placeholder.com/300x200?text=Modern'">
+                <div class="card-content">
+                    <h3>Modern Style</h3>
+                    <span class="style-tag">Contemporary</span>
+                </div>
+            </div>
+            
+            <!-- Minimal -->
+            <div class="card">
+                <img src="/image/real_samples/room_minimal.jpg" alt="Minimal Style" onerror="this.src='https://via.placeholder.com/300x200?text=Minimal'">
+                <div class="card-content">
+                    <h3>Minimal Style</h3>
+                    <span class="style-tag">Clean & Simple</span>
+                </div>
+            </div>
+            
+            <!-- Luxury -->
+            <div class="card">
+                <img src="/image/real_samples/room_luxury.jpg" alt="Luxury Style" onerror="this.src='https://via.placeholder.com/300x200?text=Luxury'">
+                <div class="card-content">
+                    <h3>Luxury Style</h3>
+                    <span class="style-tag">Elegant</span>
+                </div>
+            </div>
+            
+            <!-- Bohemian -->
+            <div class="card">
+                <img src="/image/real_samples/room_bohemian.jpg" alt="Bohemian Style" onerror="this.src='https://via.placeholder.com/300x200?text=Bohemian'">
+                <div class="card-content">
+                    <h3>Bohemian Style</h3>
+                    <span class="style-tag">Colorful</span>
+                </div>
+            </div>
+            
+            <!-- Industrial -->
+            <div class="card">
+                <img src="/image/real_samples/room_industrial.jpg" alt="Industrial Style" onerror="this.src='https://via.placeholder.com/300x200?text=Industrial'">
+                <div class="card-content">
+                    <h3>Industrial Style</h3>
+                    <span class="style-tag">Urban</span>
+                </div>
+            </div>
+            
+            <!-- Scandinavian -->
+            <div class="card">
+                <img src="/image/real_samples/room_scandinavian.jpg" alt="Scandinavian Style" onerror="this.src='https://via.placeholder.com/300x200?text=Scandinavian'">
+                <div class="card-content">
+                    <h3>Scandinavian Style</h3>
+                    <span class="style-tag">Nordic</span>
                 </div>
             </div>
         </div>
-        {% endfor %}
+        
+        <!-- Original Room for Comparison -->
+        <div style="margin-top: 30px; text-align: center;">
+            <h3>Original Room Used for Generation:</h3>
+            <img src="/image/real_samples/original_room.jpg" alt="Original Room" style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" onerror="this.style.display='none'">
+            <p><small>Depth Map Used: <code>/image/real_samples/depth_map.png</code></small></p>
+        </div>
     </div>
-</body>
-</html>
+    
+   <!-- ORIGINAL ROOM IMAGES SECTION -->
+<h2>📸 Your Original Room Images</h2>
+<div class="gallery">
+    {% for image in images %}
+    <div class="card">
+        <img src="/image/{{ image.filename }}" alt="{{ image.name }}">
+        <div class="card-content">
+            <h3>{{ image.name }}</h3>
+            <div class="styles">
+                {% for style in styles %}
+                <a href="/compare/{{ image.filename }}/{{ style }}" class="style-btn">{{ style }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
