@@ -28,6 +28,37 @@ Complete 5-member AI pipeline for interior design with **REAL generated samples*
 - **Member 5**: Web interface (Flask)
 - ✅ **See actual generated images** in the project README
 
+### 4. 🎤 Urdu Offline Speech-to-Text System
+A real-time, fully offline Urdu speech recognition system with a beautiful dark-themed GUI.
+
+**Features:**
+- 🎙️ Continuous microphone recording (never stops until you click Stop)
+- 🔄 Real-time transcription with live partial results
+- 🗣️ Urdu language support with proper RTL rendering
+- ✅ Final results with timestamps in separate panel
+- 📁 Automatic session logging to files
+- 🎨 Beautiful dark theme with two-panel interface
+- ⚡ Fast performance with 3-second audio chunks
+
+**Tech Stack:** OpenAI Whisper, Python, Tkinter, PyAudio, static-ffmpeg
+
+**Location:** [`/offline-stt-system/`](./offline-stt-system/)
+
+**Quick Start:**
+```bash
+cd offline-stt-system
+pip install -r requirements.txt
+python stt_ui_perfect_fixed.py
+
+Screenshot Preview:
+┌─────────────────────────────────────┐
+│  🎤 Urdu Speech-to-Text System      │
+├──────────────┬──────────────────────┤
+│ Live Output  │ Final Results        │
+│ 🔄 ...       │ [12:30] آپ کا نام    │
+│              │ [12:31] آپ سکول جاتے │
+└──────────────┴──────────────────────┘
+
 ## 🚀 Quick Start
 
 Each project has its own setup instructions in its folder:
