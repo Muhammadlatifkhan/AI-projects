@@ -4,59 +4,38 @@ Welcome to my AI/ML projects repository! This contains projects completed during
 
 ## 📂 Projects
 
-### 1. 🛍️ [Customer Support AI System](./customer-support-ai/)
+### 1. 🛍️ Customer Support AI System
 An AI-powered system that processes customer messages and provides:
 - **Message Classification**: Complaint, Refund/Return, Sales Inquiry, Delivery Question, Account/Technical Issue, General Query, Spam
 - **Sentiment Analysis**: Positive, Neutral, Negative
 - **Auto-reply Generation**: Professional responses
 - **Tech Stack**: Python, Flask, Groq API, Transformers
 
-### 2. 🔊 [Text-to-Speech (TTS) Voice Agent](./tts-agent/)
-
+### 2. 🔊 Text-to-Speech (TTS) Voice Agent
 Multilingual TTS system that converts text from multiple sources:
 - **Input Types**: Plain text, PDF, Word documents, Images (OCR)
 - **Output Languages**: English and Urdu speech
 - **Tech Stack**: Python, Flask, gTTS, pyttsx3, Tesseract OCR, PyPDF2
-- **Multilingual TTS system for English and Urdu speech synthesis.
 
-### 3. 🏠 [AI Room Redesign System](./room-redesign/)
-Complete 5-member AI pipeline for interior design with **REAL generated samples**:
-- **Member 1**: Depth map generation (MiDaS)
-- **Member 2**: Object segmentation (DeepLabV3)
-- **Member 3**: Prompt engineering (6 styles)
-- **Member 4**: Image generation (Stable Diffusion + ControlNet)
-- **Member 5**: Web interface (Flask)
-- ✅ **See actual generated images** in the project README
-
-## 🚀 Quick Start
-
-Each project has its own setup instructions in its folder:
-
-```bash
-# Example: Run Customer Support AI
-cd customer-support-ai
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-📊 Project Stats
-done
-
-Technologies: Python, Flask, PyTorch, Transformers, OpenCV, Groq API
-
-Models Used: MiDaS, DeepLabV3, Stable Diffusion, LLaMA
+### 3. 🏠 AI Room Redesign System
+Complete 5-member AI pipeline for interior design with REAL generated samples:
+- **01-depth-estimation**: Depth map generation (MiDaS)
+- **02-segmentation**: Object segmentation (DeepLabV3)
+- **03-prompt-engineering**: Prompt engineering (6 styles)
+- **04-image-generation**: Image generation (Stable Diffusion + ControlNet)
+- **05-web-interface**: Flask web interface
+- **✅ REAL RESULTS**: 14 images + 3 videos in `/data/outputs/`
 
 ### 4. 🎤 Urdu Offline Speech-to-Text System
-A real-time, fully offline Urdu speech recognition system with a beautiful dark-themed GUI.
+A real-time, fully offline Urdu speech recognition system with beautiful dark-themed GUI.
 
 **Features:**
-- 🎙️ Continuous microphone recording (never stops until you click Stop)
-- 🔄 Real-time transcription with live partial results
-- 🗣️ Urdu language support with proper RTL rendering
-- ✅ Final results with timestamps in separate panel
-- 📁 Automatic session logging to files
-- 🎨 Beautiful dark theme with two-panel interface
-- ⚡ Fast performance with 3-second audio chunks
+- 🎙️ **Continuous Recording**: Never stops until you click Stop
+- 🔄 **Real-time Transcription**: Live partial results while speaking
+- 🗣️ **Urdu Language Support**: Proper RTL rendering
+- ✅ **Two-Panel Interface**: Live output + Final results with timestamps
+- 📁 **Session Logging**: Automatic saving to log files
+- ⚡ **Fast Performance**: 3-second audio chunks with 50% overlap
 
 **Tech Stack:** OpenAI Whisper, Python, Tkinter, PyAudio, static-ffmpeg
 
@@ -77,7 +56,12 @@ Screenshot Preview:
 │              │ [12:31] آپ سکول جاتے │
 └──────────────┴──────────────────────┘
 
-
+Sample Output:
+[15:33:11] اب کہا سے آرہی ہے
+[15:33:18] اب کا ب آئے ہیں
+[15:33:25] آپ کا نام کیا
+[15:33:52] آپ قاب آئے ہیں
+[15:33:59] آپ سکول جاتے ہیں
 
 👨‍💻 Author
 Muhammad Latif - Computer Systems Engineer
