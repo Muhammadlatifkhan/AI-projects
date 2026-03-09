@@ -28,6 +28,24 @@ Complete 5-member AI pipeline for interior design with **REAL generated samples*
 - **Member 5**: Web interface (Flask)
 - ✅ **See actual generated images** in the project README
 
+## 🚀 Quick Start
+
+Each project has its own setup instructions in its folder:
+
+```bash
+# Example: Run Customer Support AI
+cd customer-support-ai
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+📊 Project Stats
+done
+
+Technologies: Python, Flask, PyTorch, Transformers, OpenCV, Groq API
+
+Models Used: MiDaS, DeepLabV3, Stable Diffusion, LLaMA
+
 ### 4. 🎤 Urdu Offline Speech-to-Text System
 A real-time, fully offline Urdu speech recognition system with a beautiful dark-themed GUI.
 
@@ -59,23 +77,7 @@ Screenshot Preview:
 │              │ [12:31] آپ سکول جاتے │
 └──────────────┴──────────────────────┘
 
-## 🚀 Quick Start
 
-Each project has its own setup instructions in its folder:
-
-```bash
-# Example: Run Customer Support AI
-cd customer-support-ai
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-📊 Project Stats
-done
-
-Technologies: Python, Flask, PyTorch, Transformers, OpenCV, Groq API
-
-Models Used: MiDaS, DeepLabV3, Stable Diffusion, LLaMA
 
 👨‍💻 Author
 Muhammad Latif - Computer Systems Engineer
