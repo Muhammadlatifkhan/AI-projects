@@ -1,0 +1,9 @@
+I created a 50-second AI transformation video showing a dirty room becoming a clean modern room.
+
+First, I generated a clean room anchor image using Bing Image Creator with a detailed prompt describing layout, lighting, and furniture position. I used the same prompt with "dirty, abandoned, messy" keywords to create the matching dirty version, ensuring both images had identical camera angle and layout.
+
+For video generation, I used Pika (image-to-video mode). I uploaded the dirty room image and generated four progressive clips using prompts like "slowly becoming cleaner," "half cleaned," "almost fully clean," and finally uploaded the clean anchor image for the reveal.
+
+Each generation gave 4 variations; I selected the most realistic one for each stage. I edited the clips in CapCut, arranged them in sequence, added 0.5-second dissolve transitions between clips, added soft background music, and exported as 1080x1920 MP4 at 30fps.
+
+The final video is 50 seconds, maintains consistent camera angle throughout, and looks like realistic footage without obvious AI glitches.
