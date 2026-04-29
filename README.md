@@ -68,3 +68,18 @@ Muhammad Latif - Computer Systems Engineer
 
 📄 License
 MIT License
+
+## 5. AI Room Transformation System 🏠✨
+
+**Description:**  
+45-60 second vertical AI video showing a dirty room transforming into a clean modern room. Maintains consistent camera angle, layout, and lighting throughout to achieve realistic footage without AI glitches.
+
+**Tech Stack:** Bing Image Creator, Pika, CapCut
+
+**Key Features:**
+- Anchor frame method for layout consistency
+- Progressive 4-stage video clips (dirty → slightly clean → half clean → fully clean)
+- Smooth dissolve transitions and background music
+- Realistic dust fading and cleaning progression
+
+**Files:** Anchor images, 4 video clips, final MP4, prompts used, workflow summary
