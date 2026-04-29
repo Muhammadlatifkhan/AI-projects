@@ -83,3 +83,23 @@ MIT License
 - Realistic dust fading and cleaning progression
 
 **Files:** Anchor images, 4 video clips, final MP4, prompts used, workflow summary
+
+### 6. 📱 VELOUR DM Bot - Instagram Automated Messaging
+
+Instagram DM auto-reply bot for VELOUR clothing brand.
+
+**Features:**
+- Real-time DM processing via webhook
+- Smart keyword detection (sizing, pricing, delivery, returns)
+- Multi-language support (English/Urdu)
+- 24/7 automated customer support
+
+**Tech Stack:** Python, Flask, Meta Graph API, ngrok
+
+**Location:** [`/velour-dm-bot/`](./velour-dm-bot/)
+
+**Quick Start:**
+```bash
+cd velour-dm-bot
+pip install -r requirements.txt
+python app.py
