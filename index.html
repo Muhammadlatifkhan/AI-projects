@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Latif - AI Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 50px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .project-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .project-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .project-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        .project-link:hover {
+            transform: scale(1.05);
+        }
+        
+        .github-link {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .github-link a {
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .github-link a:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Muhammad Latif's AI Projects</h1>
+        <p class="subtitle">Machine Learning • Deep Learning • Natural Language Processing</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>📰 News Topic Classifier</h3>
+                <p>BERT-based model that classifies news headlines into 4 categories: World, Sports, Business, and Sci/Tech. Achieved 94% accuracy on AG News dataset.</p>
+                <a href="#" class="project-link">Coming Soon →</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>💬 VELOUR DM Bot</h3>
+                <p>Discord bot for automated direct messaging with advanced features and user management.</p>
+                <a href="#" class="project-link">Coming Soon →</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>🔍 More Projects</h3>
+                <p>Additional AI and machine learning projects focused on real-world problem solving.</p>
+                <a href="#" class="project-link">View Portfolio →</a>
+            </div>
+        </div>
+        
+        <div class="github-link">
+            <a href="https://github.com/Muhammadlatifkhan" target="_blank">
+                📦 View on GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>
